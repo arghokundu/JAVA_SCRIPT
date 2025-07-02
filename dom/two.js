@@ -1,0 +1,1 @@
+const mh1=document.querySelectorAll('h1')
