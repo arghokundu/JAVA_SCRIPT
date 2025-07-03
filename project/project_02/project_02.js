@@ -32,7 +32,7 @@ form.addEventListener('submit',function(e){
             case 'bmi<18.6':
                 results.innerHTML=`<span>under weight</span>`
                 break
-            case 'bmi>=18.6' & 'bmi<=24.9':
+            case 'bmi>=18.6' && 'bmi<=24.9':
                 results.innerHTML=`<span>normal</span>`
                 break
             case 'bmi>24.9':
