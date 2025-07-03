@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>java script</li>
+        <li>python</li>
+    </ul>
+</body>
+<script>
+    /*function add_lan(lnam)
+    {
+        const li=document.createElement('li')
+        li.innerHTML=`${lnam}`
+        document.querySelector('.language').appendChild(li)
+    }
+    add_lan("php")
+    add_lan("ruby")*/
+
+    //language add optimize way
+
+    function addopti(lname)
+    {
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(lname))
+        document.querySelector('.language').appendChild(li)
+    }
+    addopti("c")
+    addopti("c++")
+
+
+    //edit
+    const secondlan=document.querySelector("li:nth-child(2)")
+    //secondlan.innerHTML="html"
+    const nweli=document.createElement('li')
+    //use any one innerhtml or textcontent
+    nweli.textContent="css"      
+    secondlan.replaceWith(nweli)
+
+    //edit
+    const first=document.querySelector("li:first-child")
+    first.outerHTML="<li>typescript</li>"
+    
+    //remove
+    const lc=document.querySelector('li:last-child')
+    lc.remove()
+</script>
+</html>
