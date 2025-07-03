@@ -10,12 +10,12 @@ form.addEventListener('submit',function(e){
     const results=document.querySelector('#results')
     if(height=='' || height<0 || isNaN(height))
     {
-        results.innerHTML=`please give A VALID HEIGHT${height}`
+        results.innerHTML=`please give a valid height${height}`
     }
     //results.innerHTML=`${height}`
     else if(weight=='' || weight<0 || isNaN(weight))
     {
-        results.innerHTML=`please give A VALID HEIGHT${weight}`
+        results.innerHTML=`please give A valid weight${weight}`
     }
     else
     {
